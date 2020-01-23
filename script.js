@@ -36,11 +36,17 @@ $(document).ready(function () {
                             method: "GET"
                         }).then(function (response) {
                             console.log(response);
-                            var temp = $('.temp');
-                            temp.html(response.list[0].main.temp)
-                            var humidity = $('.humidity');
-                            var wind = $(".wind");
-                            var uvInd = $(".uvInd");
+                            var curTemp = $('.curTemp');
+                            curTemp.html(response.list[0].main.temp)
+
+                            var curHumidity = $('.curHumidity');
+                            curHumidity.html(response.list[0].main.humidity)
+
+                            var curWind = $(".curWind");
+                            curWind.html(response.list[0].wind.speed)
+
+
+                            var curUvInd = $(".curUvInd");
 
                         });
             }
