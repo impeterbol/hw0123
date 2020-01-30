@@ -7,7 +7,7 @@ $(document).ready(function () {
     let query ="";
     //
   
-   
+   //to add location-based request at the beginning
       $('#getWeather,#past-cities').on('click', function () {
       if (test) console.log("on click");
       // get location from user input box
