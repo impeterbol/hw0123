@@ -1,7 +1,14 @@
 
 $(document).ready(function () {
 
-    var cities =[]
+    //adding vars on top
+
+    let test = false;
+
+    const apiKey = "000a4bf7937f19571d8379dba047c801";
+    let url = "https://api.openweathermap.org/data/2.5/";
+    let requestType = "";
+    let query = "";
 
     // using moment to get current time and format it to 
     const curDate = moment().format('MMMM Do YYYY');
